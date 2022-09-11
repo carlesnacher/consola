@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "Pretendo";
+    src: 
+    url("/Consola/public/fonts/Pretendo.ttf") format("truetype");
+}
+@font-face {
+    font-family: "lato";
+    src: url("/Consola/public/fonts/lato.ttf") format("truetype");
+}
+.gameboy{
+    display: flex;
+    width: 420px;
+    height: 690px;
+    background-color: #eee;
+    border-radius: 10px 10px 60px 10px;
+    /*efecto de sombra alrededor del marco box-shadow*/
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+.superior1{
+    width: 100%;
+    height: 30px;
+    border-bottom: 4px solid #e0e0e0;
+}
+.superior2{
+    width: 330px;
+    height: 30px;
+    border-left: 4px solid #e0e0e0;
+    border-right: 4px solid #e0e0e0;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: absolute;
+}
+.screen{
+    top: 70px;
+    left: 40px;
+    width: 335px;
+    height: 270px;
+    margin-left: 8px;
+    margin-bottom: 55px;
+    border-radius: 12px 12px 50px 12px;
+    background-color: #777;
+    position: absolute;    
+}
+.top{
+    font-size: 10px;
+    color: #b6afaf;
+    font-family: sans-serif;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 57px;    
+}
+.top-left{
+    left: 10px;
+    top: 10px;
+    width: 120px;
+    height: 3px;
+    background-color: #8b1d90;
+    box-shadow: 0 6px 0 #283593;
+    position: absolute;
+}
+.top-right{
+    right: 10px;
+    top: 10px;
+    width: 42px;
+    height: 3px;
+    background-color: #8b1d90;
+    box-shadow: 0 6px 0 #283593;
+    position: absolute;
+}
+.screen1{
+    background: #bdae58;
+    width: 210px;
+    height: 206px;
+    margin-top: 8px;
+    margin-left: 68px;
+}
+.led-bateria{
+    width: 10px;
+    height: 10px;
+    top: 100px;
+    left: 30px;
+    border-radius: 100%;
+    background-color: #b98181;
+    position: absolute;
+}
+.text-bateria{
+    top: 118px;
+    left: 17px;
+    font-size: 8px;
+    font-family: sans-serif;
+    color: #b3b3b3;
+    position: absolute;
+}
+.text-nintendo{
+    color: #331483; 
+    position: absolute;
+    bottom: -30px;
+    left: 5px;
+}
+.marca{
+    font-family: "Pretendo";
+    font-size: 14px;
+}
+.name{
+    font-family: "lato";
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+.pad{
+    top: 400px;
+    left: 45px;
+    position: absolute;
+}
+.center{
+    width: 120px;
+    height: 120px;
+    background-color: #eae3ec;
+    border-radius: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.horizontal{
+    background: #060206;
+    width: 90px;
+    height: 30px;
+    border-radius: 3px;
+    position: absolute;
+}
+.vertical{
+    background: #060206;
+    width: 30px;
+    height: 90px;
+    border-radius: 3px;
+    position: absolute;
+}
+.flecha-down{
+    position: absolute;
+    top: 106px;
+    left: 51px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #918d8d;
+}
+.flecha-up{
+    position: absolute;
+    top: 6px;
+    left: 51px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #918d8d;
+    rotate: 180deg;
+}
+.flecha-left{
+    position: absolute;
+    top: 56px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #918d8d;
+    rotate: 90deg;
+}
+.flecha-right {
+    position: absolute;
+    top: 56px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #918d8d;
+    rotate: 270deg;
+}
+.circulo{
+    width: 25px;
+    height: 25px;
+    background: #353535;
+    border-radius: 100%;
+    position: absolute;
+}
+.botones-AB{
+    width: 130px;
+    height: 60px;
+    background: #eae3ec;
+    border-radius: 30px;
+    position: absolute;
+    left: 220px;
+    rotate: -25deg;
+    top: 20px;
+}
+.boton-A{
+    top: 9px;
+    left: 10px;
+    width: 44px;
+    height: 44px;
+    background: #a93671;
+    border-radius: 100%;
+    position: absolute
+}
+.a{
+    top: 55px;
+    right: -48px;
+    position: absolute;
+    font-family: "pretendo";
+    font-size: 13px;
+    color: #331483;
+}
+.boton-B{
+    top: 9px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    background: #a93671;
+    border-radius: 100%;
+    position: absolute;
+}
+.b{
+    top: 65px;
+    left: 26px;
+    position: absolute;
+    font-family: "pretendo";
+    font-size: 13px;
+    color: #331483;
+}
+.select-start{
+    top: 160px;
+    left: 110px;
+    height: 12px;
+    width: 54px;
+    background: #999;
+    border-radius: 10px;
+    rotate: -25deg;
+    box-shadow: 57px 27px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
+    position: absolute;
+}
+.select{
+    top: 20px;
+    left: -3px;
+    position: absolute;
+    font-family:"pretendo";
+    font-size: 12px;
+    color: #331483;
+}
+.start{
+    top: 48px;
+    right: -52px;
+    position: absolute;
+    font-family:"pretendo";
+    font-size: 12px;
+    color: #331483;
+}
+.altavoces{
+    position: relative;
+    height: 70px;
+    width: 8px;
+    top: 226px;
+    left: 270px;
+    background: #DDD;
+    border-radius: 4px;
+    rotate: -32deg;
+    box-shadow: 20px 0 #ddd, 40px 0 #ddd, 60px 0 #ddd, 80px 0 #ddd, 100px 0 #ddd;
+}
